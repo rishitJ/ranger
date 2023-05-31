@@ -9,13 +9,13 @@ block_image_height = 430;
 var block_image_object= "";
 
 function new_image(get_image)
-
-fabric.Image.fromURL(get_imag , function(Img)
+{
+fabric.Image.fromURL(get_image , function(Img)
 {
 	block_image_object = Img;
 
-	block_image_object.scaletoWidth(block_image_width)
-	block_image_object.scaletoHeight(block_image_height)
+	block_image_object.scaleToWidth(block_image_width)
+	block_image_object.scaleToHeight(block_image_height)
 	block_image_object.set({
 	top:block_y,
 	left:block_x
